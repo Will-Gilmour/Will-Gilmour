@@ -21,7 +21,7 @@ I'm a medical doctor turned tech enthusiast, blending my expertise in healthcare
 I'm always open to collaboration and learning opportunities. If you're interested in healthcare technology, AI, or if you have insights or suggestions for my projects, please feel free to reach out or contribute to my repositories.
 
 ## 📫 Contact Me
-- [LinkedIn Profile]((https://www.linkedin.com/in/will-gilmour-bb873a191/))
+- [LinkedIn Profile]([https://www.linkedin.com/in/will-gilmour-bb873a191/])
 - [Email](mailto:wiliam-gilmour@outlook.com)
 
 Thank you for visiting my GitHub page. Let's innovate healthcare together!
