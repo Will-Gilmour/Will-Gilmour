@@ -1,7 +1,7 @@
 # 👋 Hi, I’m @Will-Gilmour
 ## 👨‍⚕️ About Me
 
-I'm a medical doctor turned tech enthusiast, blending my expertise in healthcare with my passion for machine learning and AI. With a deep understanding of both medical needs and technological possibilities, I'm on a mission to innovate healthcare solutions.
+I'm a medical doctor turned AI engineer, blending my expertise in healthcare with my passion for machine learning and AI. With a deep understanding of both medical needs and technological possibilities, I'm on a mission to innovate healthcare solutions.
 
 ## 🎯 My Goals
 
@@ -14,11 +14,8 @@ I'm a medical doctor turned tech enthusiast, blending my expertise in healthcare
 - **Continuous Learning**: Engaging with the GitHub community, I aim to keep learning and growing in the fields of AI and machine learning.
 
 ### Ongoing Projects
-- **NLP for Medical Notes**: Developing a tool to help healthcare professionals manage and interpret medical notes efficiently.
 - **3D CNN for Image Analysis**: Working on a 3D Convolutional Neural Network for advanced medical image analysis and prediction.
-
-## 🤝 How to Collaborate
-I'm always open to collaboration and learning opportunities. If you're interested in healthcare technology, AI, or if you have insights or suggestions for my projects, please feel free to reach out or contribute to my repositories.
+- **Paper graph**: Building a reproducable system for reviewing literature as a graph rather than lists, to get a better sense for communities and quickly idenitfying important papers.
 
 ## 📫 Contact Me
 - [LinkedIn Profile](https://www.linkedin.com/in/will-gilmour-bb873a191/)
