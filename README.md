@@ -1,45 +1,46 @@
 # Will Gilmour
 
-I'm a doctor who builds AI systems. I spent several years practising medicine - rotating through neurology, emergency medicine and general surgery - before moving into AI engineering. I'm now co-founder and CTO of Humma, where we're building conversational AI that's designed and governed together with the communities it serves.
+I'm a doctor who builds AI systems, and co-founder and CTO of [Humma](https://humma.ai). My work spans clinical product design, LLM orchestration, evaluation and the engineering needed to connect them.
 
-I care about building AI that's actually useful in medicine, not just impressive in demos. Having been both the clinician buried in paperwork and the engineer building the tools meant to help, I have strong opinions about what's worth building and what isn't. Most of what I see in healthcare AI doesn't clear that bar. Some of it does, and that's what I want to work on.
+At Humma, we're building conversational AI to help patients understand information, organise their concerns and prepare for appointments with their healthcare team. Patient autonomy is the starting point for the product and its technical design.
 
-## What I'm building
+## What I'm working on at Humma
 
-### Humma
+- **Architecture shaped by clinical boundaries.** Defining what belongs in explicit rules, what a language model can help with, and how information retrieval and response checks support our information-only doctrine.
+- **Evaluation of real failure modes.** Testing source faithfulness, false reassurance, scope drift and whether a response actually acknowledges a patient's concern. I care about what a benchmark measures and how its results should be interpreted.
+- **Classification and conversation routing.** Exploring Jev and Clef, including local inference, with comparisons of missed cases, false positives, latency and hosting constraints. This is experimental work with explicit criteria for adoption.
+- **Patient and clinician communication.** Designing conversations and summaries that help patients express what matters to them and give the receiving team useful context.
 
-Most healthcare AI is built for the average patient and then handed to everyone else. Humma starts from the opposite end. We're building consent-first, culturally competent AI for healthcare: conversational systems that are governed alongside the communities they're meant to serve, rather than trained on them and pointed at them.
+Our doctrine sets hard boundaries around diagnosis, personalised treatment recommendations and false reassurance. Turning those principles into useful, testable behaviour is a substantial part of the engineering work.
 
-As co-founder and CTO I own the technical side end to end - the model and orchestration work, the evaluation systems we use to tell whether any of it is actually helping, and the architecture that keeps consent and community governance at the centre rather than bolted on afterwards.
+## How I work
 
-**[humma.ai](https://humma.ai)**
+I favour small changes organised around a clear behaviour, with tests included alongside the implementation. Reproducing a failure, making the test pass and reviewing the change should form one understandable piece of work.
+
+I like trying new approaches early. I also want the comparison, the failure cases and the remaining limitations to be clear enough for another engineer to evaluate the result. Local experiments and adoption decisions are distinct stages.
+
+Clinical experience keeps me attentive to the interaction itself. A response can avoid unsafe advice and still leave someone feeling unheard. Those trade-offs belong in the product requirements and evaluations.
+
+Most of Humma's implementation is in private repositories. The project below offers a public example of my work across data pipelines, machine learning and interactive tools.
+
+## Public work
 
 ### Paper Graph
 
-Scientific literature is a network, but almost every tool we have for navigating it gives you a ranked list instead. I think that's a mistake worth taking seriously.
+A tool for exploring scientific literature through citation networks. Starting from seed papers, it crawls open citation data, builds a graph, uses GPU-accelerated layout and community detection, and labels clusters with a locally hosted language model. An interactive browser interface lets you explore the resulting map.
 
-I built a system that crawls citation data from open APIs, maps papers into a navigable graph using GPU-accelerated force-directed layout, detects thematic communities, and labels them using a locally-hosted LLM. Starting from five seed papers about a niche surgical procedure, one map expanded to 700,000 papers spanning neuroscience, biomedical engineering, radiology and several surgical specialties.
+The repository includes the Python data pipeline, backend, frontend, Docker setup and technical documentation.
 
-I tested it against a published systematic review and recovered 62% of the included papers in about 30 minutes, and the whole thing runs locally. Once it's set up, the map can be hosted anywhere and you get the full benefit from a browser.
-
-**[Repository](https://github.com/Will-Gilmour/paper_graph)** · **[Demo](https://www.youtube.com/watch?v=ITWbtRxFnNM)**
-
-### Other work
-
-A lot of what I've built lives behind corporate walls, but the short version: I build evaluation platforms for multi-agent AI systems, architect LLM orchestration pipelines, and spend a lot of time on how you actually measure whether healthcare AI is doing what it claims to. I once built a 3D CNN for predicting surgical outcomes that turned out to be more useful for what its interpretability revealed about our planning process than for its actual predictions, which I think says something about what matters in this field.
+[Code](https://github.com/Will-Gilmour/paper_graph) · [Demo](https://www.youtube.com/watch?v=ITWbtRxFnNM) · [Technical overview](https://github.com/Will-Gilmour/paper_graph/blob/main/docs/TECHNICAL_OVERVIEW.md)
 
 ## Background
 
-**Co-founder & CTO** at Humma - conversational healthcare AI, governed with the communities it serves
+My background includes clinical practice in neurology, emergency medicine and surgery; neuroscience research at Dundee; and AI engineering at IQVIA, working on multi-agent systems, evaluation frameworks and LLM orchestration.
 
-**AI Engineer** at IQVIA - multi-agent systems, evaluation frameworks, LLM orchestration
-
-**Clinical Research Fellow** at University of Dundee - first-author publication in *Brain*, fMRI research in Parkinson's disease
-
-**Neurology Registrar** at NHS Tayside - primary on-call specialist for the region
-
-**MB ChB** from University of Manchester · **MSc (Distinction)** in Computational Neuroscience from University of Sheffield
+MB ChB, University of Manchester · MSc with Distinction in Computational Neuroscience, University of Sheffield.
 
 ## Get in touch
 
-**[Humma](https://humma.ai)** · **[LinkedIn](https://www.linkedin.com/in/will-gilmour-bb873a191/)** · **[will@humma.ai](mailto:will@humma.ai)**
+If you're interested in building healthcare AI and these are the kinds of problems you want to work on, I'd like to hear from you.
+
+[Humma](https://humma.ai) · [LinkedIn](https://www.linkedin.com/in/will-gilmour-bb873a191/) · [will@humma.ai](mailto:will@humma.ai)
